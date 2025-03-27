@@ -1,0 +1,1094 @@
+# nice ../build/src/mohex/mohex --config mohex-cg2010.htp --seed 116384 --logfile-name jobs/11x11-mohex-mohex-weak-vs-mohex-mohex-cg2010/mohex-mohex-cg2010-29.log
+>boardsize 11 11
+<= 
+<
+>name
+MoHex 2.0.CMake Mar 21 2025
+Copyright (C) 2007-2012 by the authors of the Benzene project.
+This program comes with ABSOLUTELY NO WARRANTY. This is
+free software and you are welcome to redistribute it under
+certain conditions. Type `benzene-license' for details.
+
+SgRandom::SetSeed: 116384
+SgUctSearch: system memory 33632358400, using 1000000000 (5681818 nodes)
+SgRandom::SetSeed: 1
+SgRandom::SetSeed: 116384
+9e597 info: Prior Patterns:
+9e597 info: Global:
+9e597 info: Size            = 565 32648 
+9e597 info: TableEntries    = 65932 65910
+9e597 info: MirrorsAdded    = 0 0
+9e597 info: PrunableCount   = 30593 30629
+9e597 info: LargestGamma    = 5820.77
+9e597 info: SmallestGamma   = 6.6e-05
+9e597 info: Local:
+9e597 info: Size            = 550 5318 
+9e597 info: TableEntries    = 11602 11588
+9e597 info: MirrorsAdded    = 0 0
+9e597 info: PrunableCount   = 3659 3667
+9e597 info: LargestGamma    = 11281.8
+9e597 info: SmallestGamma   = 0.026235
+9e597 info: Playout Patterns:
+9e597 info: Global:
+9e597 info: Size            = 565 32648 
+9e597 info: TableEntries    = 70329 70329
+9e597 info: MirrorsAdded    = 4397 4419
+9e597 info: PrunableCount   = 30593 30629
+9e597 info: LargestGamma    = 5820.77
+9e597 info: SmallestGamma   = 6.6e-05
+9e597 info: Local:
+9e597 info: Size            = 550 5318 
+9e597 info: TableEntries    = 11602 11588
+9e597 info: MirrorsAdded    = 0 0
+9e597 info: PrunableCount   = 3659 3667
+9e597 info: LargestGamma    = 11281.8
+9e597 info: SmallestGamma   = 0.026235
+param_game allow_swap 1
+= 
+
+param_mohex max_memory 32000000000
+= 
+
+param_mohex num_threads 1
+= 
+
+param_mohex max_time 1
+= 
+
+param_mohex max_games 1
+= 
+
+param_mohex knowledge_threshold 400
+= 
+
+param_mohex reuse_subtree 1
+= 
+
+param_mohex use_parallel_solver 1
+= 
+
+<= MoHex
+<
+>version
+<= 2.0.CMake
+<
+>play b b4
+<= 
+<
+>showboard
+<= 
+< 
+<  83644dcf10bea3e9
+<  a  b  c  d  e  f  g  h  i  j  k  
+< 1\.  .  .  .  .  .  .  .  .  .  .\1
+<  2\.  .  .  .  .  .  .  .  .  .  .\2
+<   3\.  .  .  .  .  .  .  .  .  .  .\3
+<    4\.  B  .  .  .  .  .  .  .  .  .\4
+<     5\.  .  .  .  .  .  .  .  .  .  .\5
+<      6\.  .  .  .  .  .  .  .  .  .  .\6
+<       7\.  .  .  .  .  .  .  .  .  .  .\7
+<        8\.  .  .  .  .  .  .  .  .  .  .\8
+<         9\.  .  .  .  .  .  .  .  .  .  .\9
+<         10\.  .  .  .  .  .  .  .  .  .  .\10
+<          11\.  .  .  .  .  .  .  .  .  .  .\11
+<              a  b  c  d  e  f  g  h  i  j  k  
+<
+>play w swap-pieces
+<= 
+<
+>genmove w
+<= e6
+<
+>play b h8
+9e597 info: PlayAndSolve: Building VCs to avoid race condition.
+9e597 info: PlayAndSolve: Continuing on as usual.
+2b836 info: *** PlayerThread ***
+23826 info: *** SolverThread ***
+2b836 info: Best move cannot be determined, must search state.
+2b836 info: --- MoHexPlayer::Search() ---
+2b836 info: Color: white
+2b836 info: MaxGames: 1
+2b836 info: NumberThreads: 1
+2b836 info: MaxNodes: 181818181 (15999999928 bytes)
+2b836 info: TimeForMove: 1
+2b836 info: PreSearch: max time reached (48/90).
+2b836 info: Time for PreSearch: 0.20108s
+2b836 info: 
+  83644dcf10bea3e9
+  a  b  c  d  e  f  g  h  i  j  k  
+ 1\.  .  .  *  *  *  *  *  *  *  .\1
+  2\.  .  *  .  *  *  *  *  *  *  .\2
+   3\.  *  *  *  *  *  *  *  *  *  .\3
+    4\.  B  *  *  *  *  *  *  *  *  .\4
+     5\.  *  *  *  *  *  *  *  *  *  .\5
+      6\.  *  *  *  *  *  *  *  *  *  .\6
+       7\.  *  *  *  *  *  *  *  *  *  .\7
+        8\.  *  *  *  *  *  *  *  *  *  .\8
+         9\.  *  *  *  *  *  *  *  *  *  .\9
+         10\.  *  *  *  *  *  *  .  *  .  .\10
+          11\.  *  *  *  *  *  *  *  .  .  .\11
+              a  b  c  d  e  f  g  h  i  j  k  
+2b836 info: No subtree to reuse.
+2b836 info: Creating thread 0
+2b836 info: StartSearch()[0]
+SgUctSearch: max games reached
+2b836 info: 
+Elapsed Time   0.514069s
+Count          1
+GamesPlayed    1
+Nodes          1
+Knowledge      0 (0.0%)
+Expansions     0.0
+Time           0.00
+GameLen        120.0 dev=0.0 min=120.0 max=120.0
+InTree         0.0 dev=0.0 min=0.0 max=0.0
+KnowDepth      -
+Aborted        0%
+Games/s        357.7
+Score          1.00
+Sequence      
+2b836 info: 
+2b836 warning: **** MoHexSearch returned empty sequence!
+2b836 warning: **** Returning random move!
+2b836 info: *** Player move: e6
+1b816 info: DfpnSolver::CheckAbort(): Abort flag!
+23826 info: 
+MID calls      68
+VC builds      66
+Terminal       0
+Work           68
+Wasted Work    0 (0%)
+Elapsed Time   0.534187
+MIDs/sec       127.296
+VCs/sec        123.552
+Cnt prune sib  0
+Avg prune sib  -
+Consider Size  83.9848 dev=4.62711 min=74 max=90
+Move Index     -
+Move Percent   -
+Delta Increase 3.43284 dev=13.7821 min=1 max=82
+Winner         empty
+PV             b8 j2 c9 e8
+
+HashTableStatistics:
+Stores         159
+LookupAttempt  14275
+LookupSuccess  747
+Collisions     0
+
+23826 info: Search aborted.
+<= 
+<
+>genmove w
+<= a10
+<
+>play b b3
+9e597 info: PlayAndSolve: Building VCs to avoid race condition.
+9e597 info: PlayAndSolve: Continuing on as usual.
+23826 info: *** PlayerThread ***
+2b836 info: *** SolverThread ***
+23826 info: Best move cannot be determined, must search state.
+23826 info: --- MoHexPlayer::Search() ---
+23826 info: Color: white
+23826 info: MaxGames: 1
+23826 info: NumberThreads: 1
+23826 info: MaxNodes: 181818181 (15999999928 bytes)
+23826 info: TimeForMove: 1
+23826 info: PreSearch: max time reached (32/90).
+23826 info: Time for PreSearch: 0.200225s
+23826 info: 
+  0969fe1936f71015
+  a  b  c  d  e  f  g  h  i  j  k  
+ 1\.  .  .  *  *  *  *  *  *  *  .\1
+  2\.  .  *  *  *  *  *  *  *  *  .\2
+   3\.  *  *  *  *  *  *  *  *  *  .\3
+    4\.  B  *  *  *  *  *  *  *  *  .\4
+     5\.  *  *  *  *  *  *  *  *  *  .\5
+      6\.  *  *  *  W  *  *  *  *  *  .\6
+       7\.  *  *  *  *  *  *  *  *  *  .\7
+        8\.  *  *  *  *  *  *  B  *  *  .\8
+         9\.  *  *  *  *  *  *  *  *  *  .\9
+         10\.  *  *  *  *  *  *  *  *  .  .\10
+          11\.  *  *  *  *  *  *  *  .  .  .\11
+              a  b  c  d  e  f  g  h  i  j  k  
+23826 info: Old: [black, b4] [white, swap-pieces] 
+23826 info: New: [black, b4] [white, swap-pieces] [white, e6] [black, h8] 
+23826 info: ReuseSubtree: Colors do not alternate.
+23826 info: No subtree to reuse.
+23826 info: StartSearch()[0]
+SgUctSearch: max games reached
+23826 info: 
+Elapsed Time   0.591978s
+Count          1
+GamesPlayed    1
+Nodes          1
+Knowledge      0 (0.0%)
+Expansions     0.0
+Time           0.00
+GameLen        118.0 dev=0.0 min=118.0 max=118.0
+InTree         0.0 dev=0.0 min=0.0 max=0.0
+KnowDepth      -
+Aborted        0%
+Games/s        2132.2
+Score          1.00
+Sequence      
+23826 info: 
+23826 warning: **** MoHexSearch returned empty sequence!
+23826 warning: **** Returning random move!
+23826 info: *** Player move: a10
+1b816 info: DfpnSolver::CheckAbort(): Abort flag!
+2b836 info: 
+MID calls      59
+VC builds      57
+Terminal       0
+Work           59
+Wasted Work    0 (0%)
+Elapsed Time   0.607088
+MIDs/sec       97.1853
+VCs/sec        93.8908
+Cnt prune sib  0
+Avg prune sib  -
+Consider Size  80.2456 dev=12.4298 min=28 max=90
+Move Index     -
+Move Percent   -
+Delta Increase 3.27586 dev=12.2823 min=1 max=80
+Winner         empty
+PV             b7 g5 i2 f4
+
+HashTableStatistics:
+Stores         300
+LookupAttempt  27533
+LookupSuccess  1485
+Collisions     0
+
+2b836 info: Search aborted.
+<= 
+<
+>genmove w
+<= a7
+<
+>play b b11
+9e597 info: PlayAndSolve: Building VCs to avoid race condition.
+9e597 info: PlayAndSolve: Continuing on as usual.
+2b836 info: *** PlayerThread ***
+23826 info: *** SolverThread ***
+2b836 info: Best move cannot be determined, must search state.
+2b836 info: --- MoHexPlayer::Search() ---
+2b836 info: Color: white
+2b836 info: MaxGames: 1
+2b836 info: NumberThreads: 1
+2b836 info: MaxNodes: 181818181 (15999999928 bytes)
+2b836 info: TimeForMove: 1
+2b836 info: PreSearch: max time reached (43/88).
+2b836 info: Time for PreSearch: 0.200819s
+2b836 info: 
+  c10d870919847708
+  a  b  c  d  e  f  g  h  i  j  k  
+ 1\.  .  .  .  *  *  *  *  *  *  .\1
+  2\.  .  *  *  *  *  *  *  *  *  .\2
+   3\.  B  *  *  *  *  *  *  *  *  .\3
+    4\b  B  *  *  *  *  *  *  *  *  .\4
+     5\.  *  *  *  *  *  *  *  *  *  .\5
+      6\.  *  *  *  W  *  *  *  *  *  .\6
+       7\.  *  *  *  *  *  *  *  *  *  .\7
+        8\.  *  *  *  *  *  *  B  *  *  .\8
+         9\.  *  *  *  *  *  *  *  *  *  .\9
+         10\W  *  *  *  *  *  *  *  *  .  .\10
+          11\.  *  *  *  *  *  *  *  .  .  .\11
+              a  b  c  d  e  f  g  h  i  j  k  
+2b836 info: Old: [black, b4] [white, swap-pieces] [white, e6] [black, h8] 
+2b836 info: New: [black, b4] [white, swap-pieces] [white, e6] [black, h8] [white, a10] [black, b3] 
+2b836 info: MovesPlayed: [white, a10] [black, b3] 
+2b836 info: No subtree to reuse.
+2b836 info: StartSearch()[0]
+SgUctSearch: max games reached
+2b836 info: 
+Elapsed Time   0.348871s
+Count          1
+GamesPlayed    1
+Nodes          1
+Knowledge      0 (0.0%)
+Expansions     0.0
+Time           0.00
+GameLen        115.0 dev=0.0 min=115.0 max=115.0
+InTree         0.0 dev=0.0 min=0.0 max=0.0
+KnowDepth      -
+Aborted        0%
+Games/s        3086.4
+Score          0.00
+Sequence      
+2b836 info: 
+2b836 warning: **** MoHexSearch returned empty sequence!
+2b836 warning: **** Returning random move!
+2b836 info: *** Player move: a7
+1b816 info: DfpnSolver::CheckAbort(): Abort flag!
+23826 info: 
+MID calls      34
+VC builds      33
+Terminal       0
+Work           34
+Wasted Work    0 (0%)
+Elapsed Time   0.364875
+MIDs/sec       93.1826
+VCs/sec        90.4419
+Cnt prune sib  0
+Avg prune sib  -
+Consider Size  82.0303 dev=6.1914 min=49 max=88
+Move Index     -
+Move Percent   -
+Delta Increase 3.36364 dev=13.0217 min=1 max=77
+Winner         empty
+PV             j4 g7 g5
+
+HashTableStatistics:
+Stores         391
+LookupAttempt  38312
+LookupSuccess  2146
+Collisions     0
+
+23826 info: Search aborted.
+<= 
+<
+>genmove w
+<= a2
+<
+>play b g8
+9e597 info: PlayAndSolve: Building VCs to avoid race condition.
+9e597 info: PlayAndSolve: Continuing on as usual.
+23826 info: *** PlayerThread ***
+2b836 info: *** SolverThread ***
+23826 info: Best move cannot be determined, must search state.
+23826 info: --- MoHexPlayer::Search() ---
+23826 info: Color: white
+23826 info: MaxGames: 1
+23826 info: NumberThreads: 1
+23826 info: MaxNodes: 181818181 (15999999928 bytes)
+23826 info: TimeForMove: 1
+23826 info: PreSearch: max time reached (53/80).
+23826 info: Time for PreSearch: 0.202416s
+23826 info: 
+  65f834df1898201b
+  a  b  c  d  e  f  g  h  i  j  k  
+ 1\.  .  .  .  *  *  *  *  *  *  .\1
+  2\.  .  *  *  *  *  *  *  *  *  .\2
+   3\.  B  *  *  *  *  *  *  *  *  .\3
+    4\b  B  *  *  *  *  *  *  *  *  .\4
+     5\w  .  *  *  *  *  *  *  *  *  .\5
+      6\w  .  *  *  W  *  *  *  *  *  .\6
+       7\W  .  *  *  *  *  *  *  *  *  .\7
+        8\w  .  *  *  *  *  *  B  *  *  .\8
+         9\w  .  *  *  *  *  *  *  *  *  .\9
+         10\W  .  *  *  *  *  *  *  *  .  .\10
+          11\b  B  .  *  *  *  *  *  .  .  .\11
+              a  b  c  d  e  f  g  h  i  j  k  
+23826 info: Old: [black, b4] [white, swap-pieces] [white, e6] [black, h8] [white, a10] [black, b3] 
+23826 info: New: [black, b4] [white, swap-pieces] [white, e6] [black, h8] [white, a10] [black, b3] [white, a7] [black, b11] 
+23826 info: MovesPlayed: [white, a7] [black, b11] 
+23826 info: No subtree to reuse.
+23826 info: StartSearch()[0]
+SgUctSearch: max games reached
+23826 info: 
+Elapsed Time   0.3609s
+Count          1
+GamesPlayed    1
+Nodes          1
+Knowledge      0 (0.0%)
+Expansions     0.0
+Time           0.00
+GameLen        108.0 dev=0.0 min=108.0 max=108.0
+InTree         0.0 dev=0.0 min=0.0 max=0.0
+KnowDepth      -
+Aborted        0%
+Games/s        2710.0
+Score          0.00
+Sequence      
+23826 info: 
+23826 warning: **** MoHexSearch returned empty sequence!
+23826 warning: **** Returning random move!
+23826 info: *** Player move: a2
+1b816 info: DfpnSolver::CheckAbort(): Abort flag!
+2b836 info: 
+MID calls      40
+VC builds      39
+Terminal       0
+Work           40
+Wasted Work    0 (0%)
+Elapsed Time   0.37385
+MIDs/sec       106.995
+VCs/sec        104.32
+Cnt prune sib  0
+Avg prune sib  -
+Consider Size  75.8974 dev=7.16399 min=48 max=81
+Move Index     -
+Move Percent   -
+Delta Increase 2.87179 dev=11.3774 min=1 max=73
+Winner         empty
+PV             c7 j3 i5
+
+HashTableStatistics:
+Stores         492
+LookupAttempt  48032
+LookupSuccess  2717
+Collisions     0
+
+2b836 info: Search aborted.
+<= 
+<
+>genmove w
+<= b7
+<
+>play b b1
+9e597 info: PlayAndSolve: Building VCs to avoid race condition.
+9e597 info: PlayAndSolve: Continuing on as usual.
+2b836 info: *** PlayerThread ***
+23826 info: *** SolverThread ***
+2b836 info: Best move cannot be determined, must search state.
+2b836 info: --- MoHexPlayer::Search() ---
+2b836 info: Color: white
+2b836 info: MaxGames: 1
+2b836 info: NumberThreads: 1
+2b836 info: MaxNodes: 181818181 (15999999928 bytes)
+2b836 info: TimeForMove: 1
+2b836 info: PreSearch: max time reached (50/79).
+2b836 info: Time for PreSearch: 0.202796s
+2b836 info: 
+  03c9e3d8b3f32da2
+  a  b  c  d  e  f  g  h  i  j  k  
+ 1\b  .  *  .  *  *  *  *  *  *  .\1
+  2\W  .  .  *  *  *  *  *  *  *  .\2
+   3\b  B  *  *  *  *  *  *  *  *  .\3
+    4\b  B  *  *  *  *  *  *  *  *  .\4
+     5\w  .  *  *  *  *  *  *  *  *  .\5
+      6\w  .  *  *  W  *  *  *  *  *  .\6
+       7\W  .  *  *  *  *  *  *  *  *  .\7
+        8\w  .  *  *  *  *  B  B  *  *  .\8
+         9\w  .  *  *  *  *  *  *  *  *  .\9
+         10\W  .  *  *  *  *  *  *  *  .  .\10
+          11\b  B  .  *  *  *  *  *  .  .  .\11
+              a  b  c  d  e  f  g  h  i  j  k  
+2b836 info: Old: [black, b4] [white, swap-pieces] [white, e6] [black, h8] [white, a10] [black, b3] [white, a7] [black, b11] 
+2b836 info: New: [black, b4] [white, swap-pieces] [white, e6] [black, h8] [white, a10] [black, b3] [white, a7] [black, b11] [white, a2] [black, g8] 
+2b836 info: MovesPlayed: [white, a2] [black, g8] 
+2b836 info: No subtree to reuse.
+2b836 info: StartSearch()[0]
+SgUctSearch: max games reached
+2b836 info: 
+Elapsed Time   0.566696s
+Count          1
+GamesPlayed    1
+Nodes          1
+Knowledge      0 (0.0%)
+Expansions     0.0
+Time           0.00
+GameLen        104.0 dev=0.0 min=104.0 max=104.0
+InTree         0.0 dev=0.0 min=0.0 max=0.0
+KnowDepth      -
+Aborted        0%
+Games/s        3125.0
+Score          0.00
+Sequence      
+2b836 info: 
+2b836 warning: **** MoHexSearch returned empty sequence!
+2b836 warning: **** Returning random move!
+2b836 info: *** Player move: b7
+1b816 info: DfpnSolver::CheckAbort(): Abort flag!
+23826 info: 
+MID calls      51
+VC builds      48
+Terminal       0
+Work           51
+Wasted Work    0 (0%)
+Elapsed Time   0.587501
+MIDs/sec       86.8084
+VCs/sec        81.702
+Cnt prune sib  0
+Avg prune sib  -
+Consider Size  60.7917 dev=21.5841 min=14 max=80
+Move Index     -
+Move Percent   -
+Delta Increase 2.92 dev=10.1269 min=1 max=72
+Winner         empty
+PV             j4 h5 h4
+
+HashTableStatistics:
+Stores         616
+LookupAttempt  58006
+LookupSuccess  3345
+Collisions     0
+
+23826 info: Search aborted.
+<= 
+<
+>genmove w
+<= g9
+<
+>play b c3
+9e597 info: PlayAndSolve: Building VCs to avoid race condition.
+9e597 info: PlayAndSolve: Continuing on as usual.
+23826 info: *** PlayerThread ***
+2b836 info: *** SolverThread ***
+23826 info: Best move cannot be determined, must search state.
+23826 info: --- MoHexPlayer::Search() ---
+23826 info: Color: white
+23826 info: MaxGames: 1
+23826 info: NumberThreads: 1
+23826 info: MaxNodes: 181818181 (15999999928 bytes)
+23826 info: TimeForMove: 1
+23826 info: PreSearch: max time reached (50/81).
+23826 info: Time for PreSearch: 0.201269s
+23826 info: 
+  f473acf6d7ddecf8
+  a  b  c  d  e  f  g  h  i  j  k  
+ 1\b  B  .  .  *  *  *  *  *  *  .\1
+  2\W  .  *  *  *  *  *  *  *  *  .\2
+   3\b  B  *  *  *  *  *  *  *  *  .\3
+    4\b  B  *  *  *  *  *  *  *  *  .\4
+     5\w  .  *  *  *  *  *  *  *  *  .\5
+      6\w  .  *  *  W  *  *  *  *  *  .\6
+       7\W  W  *  *  *  *  *  *  *  *  .\7
+        8\b  .  *  *  *  *  B  B  *  *  .\8
+         9\b  .  *  *  *  *  *  *  *  *  .\9
+         10\W  .  *  *  *  *  *  *  *  .  .\10
+          11\b  B  .  *  *  *  *  *  .  .  .\11
+              a  b  c  d  e  f  g  h  i  j  k  
+23826 info: Old: [black, b4] [white, swap-pieces] [white, e6] [black, h8] [white, a10] [black, b3] [white, a7] [black, b11] [white, a2] [black, g8] 
+23826 info: New: [black, b4] [white, swap-pieces] [white, e6] [black, h8] [white, a10] [black, b3] [white, a7] [black, b11] [white, a2] [black, g8] [white, b7] [black, b1] 
+23826 info: MovesPlayed: [white, b7] [black, b1] 
+23826 info: No subtree to reuse.
+23826 info: StartSearch()[0]
+SgUctSearch: max games reached
+23826 info: 
+Elapsed Time   0.356999s
+Count          1
+GamesPlayed    1
+Nodes          1
+Knowledge      0 (0.0%)
+Expansions     0.0
+Time           0.00
+GameLen        102.0 dev=0.0 min=102.0 max=102.0
+InTree         0.0 dev=0.0 min=0.0 max=0.0
+KnowDepth      -
+Aborted        0%
+Games/s        3484.3
+Score          0.00
+Sequence      
+23826 info: 
+23826 warning: **** MoHexSearch returned empty sequence!
+23826 warning: **** Returning random move!
+23826 info: *** Player move: g9
+1b816 info: DfpnSolver::CheckAbort(): Abort flag!
+2b836 info: 
+MID calls      34
+VC builds      32
+Terminal       0
+Work           34
+Wasted Work    0 (0%)
+Elapsed Time   0.374764
+MIDs/sec       90.7238
+VCs/sec        85.3871
+Cnt prune sib  0
+Avg prune sib  -
+Consider Size  46.5 dev=24.8407 min=15 max=81
+Move Index     -
+Move Percent   -
+Delta Increase 3.06061 dev=6.81326 min=1 max=35
+Winner         empty
+PV             g5 h5 i3 h4
+
+HashTableStatistics:
+Stores         705
+LookupAttempt  66590
+LookupSuccess  3958
+Collisions     0
+
+2b836 info: Search aborted.
+<= 
+<
+>genmove w
+<= g6
+<
+>play b c9
+9e597 info: PlayAndSolve: Building VCs to avoid race condition.
+9e597 info: PlayAndSolve: Continuing on as usual.
+2b836 info: *** PlayerThread ***
+23826 info: *** SolverThread ***
+2b836 info: Best move cannot be determined, must search state.
+2b836 info: --- MoHexPlayer::Search() ---
+2b836 info: Color: white
+2b836 info: MaxGames: 1
+2b836 info: NumberThreads: 1
+2b836 info: MaxNodes: 181818181 (15999999928 bytes)
+2b836 info: TimeForMove: 1
+2b836 info: PreSearch: max time reached (58/73).
+2b836 info: Time for PreSearch: 0.202722s
+2b836 info: 
+  0d64d503f643a1ee
+  a  b  c  d  e  f  g  h  i  j  k  
+ 1\b  B  b  b  b  b  .  *  *  *  .\1
+  2\W  b  b  b  .  *  *  *  *  *  .\2
+   3\b  B  B  *  *  *  *  *  *  *  .\3
+    4\b  B  *  *  *  *  *  *  *  *  .\4
+     5\w  .  *  *  *  *  *  *  *  *  .\5
+      6\w  .  *  *  W  *  *  *  *  *  .\6
+       7\W  W  *  *  *  *  *  *  *  *  .\7
+        8\b  .  *  *  *  *  B  B  *  *  .\8
+         9\b  .  *  *  *  *  W  *  *  *  .\9
+         10\W  .  *  *  *  *  *  *  *  .  .\10
+          11\b  B  .  *  *  *  *  *  .  .  .\11
+              a  b  c  d  e  f  g  h  i  j  k  
+2b836 info: Old: [black, b4] [white, swap-pieces] [white, e6] [black, h8] [white, a10] [black, b3] [white, a7] [black, b11] [white, a2] [black, g8] [white, b7] [black, b1] 
+2b836 info: New: [black, b4] [white, swap-pieces] [white, e6] [black, h8] [white, a10] [black, b3] [white, a7] [black, b11] [white, a2] [black, g8] [white, b7] [black, b1] [white, g9] [black, c3] 
+2b836 info: MovesPlayed: [white, g9] [black, c3] 
+2b836 info: No subtree to reuse.
+2b836 info: StartSearch()[0]
+SgUctSearch: max games reached
+2b836 info: 
+Elapsed Time   0.382128s
+Count          1
+GamesPlayed    1
+Nodes          1
+Knowledge      0 (0.0%)
+Expansions     0.0
+Time           0.00
+GameLen        93.0 dev=0.0 min=93.0 max=93.0
+InTree         0.0 dev=0.0 min=0.0 max=0.0
+KnowDepth      -
+Aborted        0%
+Games/s        3289.5
+Score          1.00
+Sequence      
+2b836 info: 
+2b836 warning: **** MoHexSearch returned empty sequence!
+2b836 warning: **** Returning random move!
+2b836 info: *** Player move: g6
+1b816 info: DfpnSolver::CheckAbort(): Abort flag!
+23826 info: 
+MID calls      57
+VC builds      53
+Terminal       1
+Work           58
+Wasted Work    0 (0%)
+Elapsed Time   0.399013
+MIDs/sec       142.852
+VCs/sec        132.828
+Cnt prune sib  0
+Avg prune sib  -
+Consider Size  42.8269 dev=21.0775 min=14 max=73
+Move Index     -
+Move Percent   -
+Delta Increase 2.5614 dev=5.62269 min=1 max=34
+Winner         empty
+PV             j2 d7 d6
+
+HashTableStatistics:
+Stores         843
+LookupAttempt  75293
+LookupSuccess  4590
+Collisions     0
+
+23826 info: Search aborted.
+<= 
+<
+>genmove w
+<= g5
+<
+>play b j4
+9e597 info: PlayAndSolve: Building VCs to avoid race condition.
+9e597 info: PlayAndSolve: Continuing on as usual.
+23826 info: *** PlayerThread ***
+2b836 info: *** SolverThread ***
+23826 info: Winning SC.
+23826 info: *** Player move: g5
+2b836 info: 
+MID calls      0
+VC builds      1
+Terminal       1
+Work           1
+Wasted Work    0 (0%)
+Elapsed Time   0.008473
+MIDs/sec       0
+VCs/sec        118.022
+Cnt prune sib  0
+Avg prune sib  -
+Consider Size  -
+Move Index     -
+Move Percent   -
+Delta Increase -
+Winner         white
+PV             
+
+HashTableStatistics:
+Stores         844
+LookupAttempt  75299
+LookupSuccess  4593
+Collisions     0
+
+<= 
+<
+>genmove w
+<= j5
+<
+>play b d6
+9e597 info: PlayAndSolve: Building VCs to avoid race condition.
+9e597 info: PlayAndSolve: Continuing on as usual.
+2b836 info: *** PlayerThread ***
+23826 info: *** SolverThread ***
+2b836 info: Winning SC.
+2b836 info: *** Player move: j5
+23826 info: 
+MID calls      0
+VC builds      1
+Terminal       1
+Work           1
+Wasted Work    0 (0%)
+Elapsed Time   0.007837
+MIDs/sec       0
+VCs/sec        127.6
+Cnt prune sib  0
+Avg prune sib  -
+Consider Size  -
+Move Index     -
+Move Percent   -
+Delta Increase -
+Winner         white
+PV             
+
+HashTableStatistics:
+Stores         845
+LookupAttempt  75305
+LookupSuccess  4596
+Collisions     0
+
+<= 
+<
+>genmove w
+<= d7
+<
+>play b i5
+9e597 info: PlayAndSolve: Building VCs to avoid race condition.
+9e597 info: PlayAndSolve: Continuing on as usual.
+23826 info: *** PlayerThread ***
+2b836 info: *** SolverThread ***
+23826 info: Winning SC.
+23826 info: *** Player move: d7
+2b836 info: 
+MID calls      0
+VC builds      1
+Terminal       1
+Work           1
+Wasted Work    0 (0%)
+Elapsed Time   0.00749
+MIDs/sec       0
+VCs/sec        133.511
+Cnt prune sib  0
+Avg prune sib  -
+Consider Size  -
+Move Index     -
+Move Percent   -
+Delta Increase -
+Winner         white
+PV             
+
+HashTableStatistics:
+Stores         846
+LookupAttempt  75311
+LookupSuccess  4599
+Collisions     0
+
+<= 
+<
+>genmove w
+<= h7
+<
+>play b f6
+9e597 info: PlayAndSolve: Building VCs to avoid race condition.
+9e597 info: PlayAndSolve: Continuing on as usual.
+2b836 info: *** PlayerThread ***
+23826 info: *** SolverThread ***
+23826 info: 
+MID calls      0
+VC builds      1
+Terminal       1
+Work           1
+Wasted Work    0 (0%)
+Elapsed Time   0.008661
+MIDs/sec       0
+VCs/sec        115.46
+Cnt prune sib  0
+Avg prune sib  -
+Consider Size  -
+Move Index     -
+Move Percent   -
+Delta Increase -
+Winner         white
+PV             
+
+HashTableStatistics:
+Stores         847
+LookupAttempt  75317
+LookupSuccess  4602
+Collisions     0
+
+2b836 info: Winning SC.
+2b836 info: *** Player move: h7
+<= 
+<
+>genmove w
+<= f5
+<
+>play b h6
+9e597 info: PlayAndSolve: Building VCs to avoid race condition.
+9e597 info: PlayAndSolve: Continuing on as usual.
+2b836 info: *** SolverThread ***
+23826 info: *** PlayerThread ***
+23826 info: Winning SC.
+23826 info: *** Player move: f5
+2b836 info: 
+MID calls      0
+VC builds      1
+Terminal       1
+Work           1
+Wasted Work    0 (0%)
+Elapsed Time   0.008577
+MIDs/sec       0
+VCs/sec        116.591
+Cnt prune sib  0
+Avg prune sib  -
+Consider Size  -
+Move Index     -
+Move Percent   -
+Delta Increase -
+Winner         white
+PV             
+
+HashTableStatistics:
+Stores         848
+LookupAttempt  75323
+LookupSuccess  4605
+Collisions     0
+
+<= 
+<
+>genmove w
+<= g7
+<
+>play b i6
+9e597 info: PlayAndSolve: Building VCs to avoid race condition.
+9e597 info: PlayAndSolve: Continuing on as usual.
+2b836 info: *** PlayerThread ***
+23826 info: *** SolverThread ***
+2b836 info: Winning SC.
+2b836 info: *** Player move: g7
+23826 info: 
+MID calls      0
+VC builds      1
+Terminal       1
+Work           1
+Wasted Work    0 (0%)
+Elapsed Time   0.009997
+MIDs/sec       0
+VCs/sec        100.03
+Cnt prune sib  0
+Avg prune sib  -
+Consider Size  -
+Move Index     -
+Move Percent   -
+Delta Increase -
+Winner         white
+PV             
+
+HashTableStatistics:
+Stores         849
+LookupAttempt  75329
+LookupSuccess  4608
+Collisions     0
+
+<= 
+<
+>genmove w
+<= i7
+<
+>play b j7
+9e597 info: PlayAndSolve: Building VCs to avoid race condition.
+9e597 info: PlayAndSolve: Continuing on as usual.
+23826 info: *** PlayerThread ***
+2b836 info: *** SolverThread ***
+23826 info: Winning SC.
+23826 info: *** Player move: i7
+2b836 info: 
+MID calls      0
+VC builds      1
+Terminal       1
+Work           1
+Wasted Work    0 (0%)
+Elapsed Time   0.008675
+MIDs/sec       0
+VCs/sec        115.274
+Cnt prune sib  0
+Avg prune sib  -
+Consider Size  -
+Move Index     -
+Move Percent   -
+Delta Increase -
+Winner         white
+PV             
+
+HashTableStatistics:
+Stores         850
+LookupAttempt  75335
+LookupSuccess  4611
+Collisions     0
+
+<= 
+<
+>genmove w
+<= j6
+<
+>play b c7
+9e597 info: PlayAndSolve: Building VCs to avoid race condition.
+9e597 info: PlayAndSolve: Continuing on as usual.
+2b836 info: *** PlayerThread ***
+23826 info: *** SolverThread ***
+2b836 info: Winning SC.
+2b836 info: *** Player move: j6
+23826 info: 
+MID calls      0
+VC builds      1
+Terminal       1
+Work           1
+Wasted Work    0 (0%)
+Elapsed Time   0.007555
+MIDs/sec       0
+VCs/sec        132.363
+Cnt prune sib  0
+Avg prune sib  -
+Consider Size  -
+Move Index     -
+Move Percent   -
+Delta Increase -
+Winner         white
+PV             
+
+HashTableStatistics:
+Stores         851
+LookupAttempt  75341
+LookupSuccess  4614
+Collisions     0
+
+<= 
+<
+>genmove w
+<= c8
+<
+>play b b8
+9e597 info: PlayAndSolve: Building VCs to avoid race condition.
+9e597 info: PlayAndSolve: Continuing on as usual.
+23826 info: *** PlayerThread ***
+2b836 info: *** SolverThread ***
+23826 info: Winning SC.
+23826 info: *** Player move: c8
+2b836 info: 
+MID calls      0
+VC builds      1
+Terminal       1
+Work           1
+Wasted Work    0 (0%)
+Elapsed Time   0.007107
+MIDs/sec       0
+VCs/sec        140.706
+Cnt prune sib  0
+Avg prune sib  -
+Consider Size  -
+Move Index     -
+Move Percent   -
+Delta Increase -
+Winner         white
+PV             
+
+HashTableStatistics:
+Stores         852
+LookupAttempt  75347
+LookupSuccess  4617
+Collisions     0
+
+<= 
+<
+>genmove w
+<= b9
+<
+>play b k6
+9e597 info: PlayAndSolve: Building VCs to avoid race condition.
+9e597 info: PlayAndSolve: Continuing on as usual.
+2b836 info: *** PlayerThread ***
+23826 info: *** SolverThread ***
+2b836 info: Winning SC.
+2b836 info: *** Player move: b9
+23826 info: 
+MID calls      0
+VC builds      1
+Terminal       1
+Work           1
+Wasted Work    0 (0%)
+Elapsed Time   0.006922
+MIDs/sec       0
+VCs/sec        144.467
+Cnt prune sib  0
+Avg prune sib  -
+Consider Size  -
+Move Index     -
+Move Percent   -
+Delta Increase -
+Winner         white
+PV             
+
+HashTableStatistics:
+Stores         853
+LookupAttempt  75353
+LookupSuccess  4620
+Collisions     0
+
+<= 
+<
+>genmove w
+<= k4
+<
+>play b resign
+9e597 info: PlayAndSolve: Building VCs to avoid race condition.
+9e597 info: PlayAndSolve: Continuing on as usual.
+23826 info: *** PlayerThread ***
+2b836 info: *** SolverThread ***
+23826 info: Captured cells caused win! Removing...
+2b836 info: 
+MID calls      0
+VC builds      1
+Terminal       1
+Work           1
+Wasted Work    0 (0%)
+Elapsed Time   0.002809
+MIDs/sec       0
+VCs/sec        355.999
+Cnt prune sib  0
+Avg prune sib  -
+Consider Size  -
+Move Index     -
+Move Percent   -
+Delta Increase -
+Winner         white
+PV             
+
+HashTableStatistics:
+Stores         854
+LookupAttempt  75359
+LookupSuccess  4623
+Collisions     0
+
+23826 info: Winning SC.
+23826 info: *** Player move: k4
+<= 
+<
+>final_score
+<= W+
+<
+>quit
+<= 
+<
