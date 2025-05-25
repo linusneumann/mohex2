@@ -26,7 +26,7 @@ class GamePlayer:
         self._verbose = False
         
         for program in [self._black, self._white]:
-            program.sendCommand("boardsize " + `size` + " " + `size`)
+            program.sendCommand("boardsize " + repr(size) + " " + repr(size))
         self._blackName = self._black.getName()
         self._whiteName = self._white.getName()
 
@@ -81,7 +81,7 @@ class GamePlayer:
                 move = self._sendCommand(self._white, "genmove w")
                 elapsedWhite = elapsedWhite + (time.time() - start)
                 
-            move = string.lower(string.strip(move))
+            move = (move.lower().strip())
             self._game.addMove(move)
             
             if self._blackToMove:
@@ -89,7 +89,7 @@ class GamePlayer:
             else:
                 self._sendCommand(self._black, "play w " + move)
            
-            if string.find(move, "resign") >= 0:
+            if move.find("resign") != -1:
                 resigned = True
             
             self.adjustToMove(move)                

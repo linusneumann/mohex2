@@ -55,7 +55,17 @@ run_tournament()
 
     DIRECTORY="jobs/"$SIZE"x"$SIZE"-"$NAME1"-vs-"$NAME2
 
-    mkdir -p $DIRECTORY
+    if [ -d "$DIRECTORY" ]; then
+        i=1
+        
+        while [ -d "${DIRECTORY}-${i}" ]; do
+            ((i++))
+        done
+        DIRECTORY="${DIRECTORY}-${i}"
+    fi
+
+    
+    mkdir -p "$DIRECTORY"
 
     ./twogtp.py \
         --type $TYPE \

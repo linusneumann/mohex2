@@ -36,7 +36,7 @@ class ResultsFile:
                    error, errorMessage))
         f.close()
 
-    def wasExisting():
+    def wasExisting(self):
         return _wasExisting
 
     def clear(self):
@@ -63,7 +63,7 @@ class ResultsFile:
         line = f.readline()
         while line != "":
             if line[0] != "#":
-                array = string.split(line, "\t")
+                array =line.split("\t")
                 last = int(array[0])
             line = f.readline()
         f.close()
@@ -109,8 +109,8 @@ class Tournament:
                 "p1cmd: " + p1cmd, \
                 "p2name: " + p2name, \
                 "p2cmd: " + p2cmd, \
-                "Boardsize: " + `size`, \
-                "Rounds: " + `rounds`, \
+                "Boardsize: " + repr(size), \
+                "Rounds: " + repr(rounds), \
                 "Openings: " + openings, \
                 "Directory: " + outdir, \
                 "Start Date: "
@@ -118,7 +118,7 @@ class Tournament:
         
         if verbose:
             for line in info:
-                print line
+                print (line)
             
         self._resultsFile = ResultsFile(outdir + "/results", info)
         self.loadOpenings(openings);
@@ -143,9 +143,9 @@ class Tournament:
                  opening, verbose):
         if verbose:
             print
-            print "==========================================================="
-            print "Game ", gameIndex
-            print "==========================================================="
+            print( "===========================================================")
+            print ("Game ", gameIndex)
+            print ("===========================================================")
             
         bcmd = "nice " + blackCmd + " --seed %SRAND" \
                + " --logfile-name " + self._outdir + "/"  \
@@ -200,10 +200,10 @@ class Tournament:
         # save game
         gamePlayer.save(name + ".sgf", name, resultBlack, resultWhite)
         if error:
-            print "Error: Game", gameIndex
+            print ("Error: Game", gameIndex)
         for program in [black, white]:
             try:
-                program.sendCommand("quit");
+                program.sendCommand("quit")
             except Program.Died:
                 pass
             
@@ -221,7 +221,7 @@ class IterativeTournament(Tournament):
             lines = f.readlines()
             f.close()
             for line in lines:
-                self._openings.append(string.strip(line))
+                self._openings.append(line.strip())
 
     def playTournament(self):
         gamesPerRound = 2*len(self._openings);
@@ -231,7 +231,7 @@ class IterativeTournament(Tournament):
             gameInRound = i % gamesPerRound;
             openingIndex = gameInRound / 2;
             
-            opening = self._openings[openingIndex];
+            opening = self._openings[int(openingIndex)];
             
             if ((i % 2) == 0):
                 self.playGame(i, currentRound,
@@ -266,7 +266,7 @@ class RandomTournament(Tournament):
                 moves = stripped[len(array[0]):].strip()
                 self._openings.append([sum, moves])
             self._maxWeight = sum;
-            print self._openings;
+            print (self._openings)
             
     def pickOpening(self):
         randomWeight = random.random() * self._maxWeight;

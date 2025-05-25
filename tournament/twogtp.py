@@ -1,4 +1,4 @@
-#!/usr/bin/python -u
+#!/usr/bin/python3 -u
 #----------------------------------------------------------------------------
 # Plays a tournament between two gtp programs.
 #----------------------------------------------------------------------------
@@ -50,7 +50,7 @@ def main():
         sys.exit(1)
 
     for o, v in opts:
-        print "o = '" + o + "', v = '" + v + "'"
+        print("o = '" + o + "', v = '" + v + "'")
         if o in ("-b", "--p1cmd"):
             p1cmd = v
         elif o in ("--p1name"):
@@ -87,7 +87,7 @@ def main():
         IterativeTournament(p1name, p1cmd, p2name, p2cmd, size, rounds, \
                             outdir, openings, verbose).playTournament()
     else:
-        print "Unknown tournament type!\n"
+        print("Unknown tournament type!\n")
 
 main()
 
