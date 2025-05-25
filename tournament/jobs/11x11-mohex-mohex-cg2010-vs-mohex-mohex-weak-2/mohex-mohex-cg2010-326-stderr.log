@@ -1,0 +1,467 @@
+# nice ../build/src/mohex/mohex --config mohex-cg2010.htp --seed 52591 --logfile-name jobs/11x11-mohex-mohex-cg2010-vs-mohex-mohex-weak-2/mohex-mohex-cg2010-326.log
+>boardsize 11 11
+<= 
+<
+>name
+MoHex 2.0.CMake Mar 21 2025
+Copyright (C) 2007-2012 by the authors of the Benzene project.
+This program comes with ABSOLUTELY NO WARRANTY. This is
+free software and you are welcome to redistribute it under
+certain conditions. Type `benzene-license' for details.
+
+SgRandom::SetSeed: 52591
+SgUctSearch: system memory 33632358400, using 1000000000 (5681818 nodes)
+SgRandom::SetSeed: 1
+SgRandom::SetSeed: 52591
+96d57 info: Prior Patterns:
+96d57 info: Global:
+96d57 info: Size            = 565 32648 
+96d57 info: TableEntries    = 65932 65910
+96d57 info: MirrorsAdded    = 0 0
+96d57 info: PrunableCount   = 30593 30629
+96d57 info: LargestGamma    = 5820.77
+96d57 info: SmallestGamma   = 6.6e-05
+96d57 info: Local:
+96d57 info: Size            = 550 5318 
+96d57 info: TableEntries    = 11602 11588
+96d57 info: MirrorsAdded    = 0 0
+96d57 info: PrunableCount   = 3659 3667
+96d57 info: LargestGamma    = 11281.8
+96d57 info: SmallestGamma   = 0.026235
+96d57 info: Playout Patterns:
+96d57 info: Global:
+96d57 info: Size            = 565 32648 
+96d57 info: TableEntries    = 70329 70329
+96d57 info: MirrorsAdded    = 4397 4419
+96d57 info: PrunableCount   = 30593 30629
+96d57 info: LargestGamma    = 5820.77
+96d57 info: SmallestGamma   = 6.6e-05
+96d57 info: Local:
+96d57 info: Size            = 550 5318 
+96d57 info: TableEntries    = 11602 11588
+96d57 info: MirrorsAdded    = 0 0
+96d57 info: PrunableCount   = 3659 3667
+96d57 info: LargestGamma    = 11281.8
+96d57 info: SmallestGamma   = 0.026235
+param_game allow_swap 1
+= 
+
+param_mohex max_memory 32000000000
+= 
+
+param_mohex num_threads 1
+= 
+
+param_mohex max_time 1
+= 
+
+param_mohex max_games 1
+= 
+
+param_mohex knowledge_threshold 400
+= 
+
+param_mohex reuse_subtree 1
+= 
+
+param_mohex use_parallel_solver 0
+= 
+
+<= MoHex
+<
+>version
+<= 2.0.CMake
+<
+>play b d10
+<= 
+<
+>showboard
+<= 
+< 
+<  3cb022d49a1b9978
+<  a  b  c  d  e  f  g  h  i  j  k  
+< 1\.  .  .  .  .  .  .  .  .  .  .\1
+<  2\.  .  .  .  .  .  .  .  .  .  .\2
+<   3\.  .  .  .  .  .  .  .  .  .  .\3
+<    4\.  .  .  .  .  .  .  .  .  .  .\4
+<     5\.  .  .  .  .  .  .  .  .  .  .\5
+<      6\.  .  .  .  .  .  .  .  .  .  .\6
+<       7\.  .  .  .  .  .  .  .  .  .  .\7
+<        8\.  .  .  .  .  .  .  .  .  .  .\8
+<         9\.  .  .  .  .  .  .  .  .  .  .\9
+<         10\.  .  .  B  .  .  .  .  .  .  .\10
+<          11\.  .  .  .  .  .  .  .  .  .  .\11
+<              a  b  c  d  e  f  g  h  i  j  k  
+<
+>play w swap-pieces
+<= 
+<
+>genmove w
+<= h9
+<
+>play b c7
+96d57 info: Best move cannot be determined, must search state.
+96d57 info: --- MoHexPlayer::Search() ---
+96d57 info: Color: white
+96d57 info: MaxGames: 1
+96d57 info: NumberThreads: 1
+96d57 info: MaxNodes: 181818181 (15999999928 bytes)
+96d57 info: TimeForMove: 1
+96d57 info: PreSearch: max time reached (44/83).
+96d57 info: Time for PreSearch: 0.20226s
+96d57 info: 
+  3cb022d49a1b9978
+  a  b  c  d  e  f  g  h  i  j  k  
+ 1\.  .  .  *  *  *  *  *  *  *  .\1
+  2\.  .  *  *  *  *  *  *  *  *  .\2
+   3\.  *  *  *  *  *  *  *  *  *  .\3
+    4\.  *  *  *  *  *  *  *  *  .  .\4
+     5\.  *  *  *  *  *  *  *  *  *  .\5
+      6\.  *  *  *  *  *  *  *  *  *  .\6
+       7\.  *  *  *  *  *  *  *  *  *  .\7
+        8\.  .  *  *  *  *  *  *  *  *  .\8
+         9\.  *  *  *  *  *  *  *  *  *  .\9
+         10\.  *  .  B  .  *  *  *  *  .  .\10
+          11\.  b  b  b  b  .  *  *  .  .  .\11
+              a  b  c  d  e  f  g  h  i  j  k  
+96d57 info: No subtree to reuse.
+96d57 info: Creating thread 0
+96d57 info: StartSearch()[0]
+SgUctSearch: max games reached
+96d57 info: 
+Elapsed Time   0.482218s
+Count          1
+GamesPlayed    1
+Nodes          1
+Knowledge      0 (0.0%)
+Expansions     0.0
+Time           0.00
+GameLen        116.0 dev=0.0 min=116.0 max=116.0
+InTree         0.0 dev=0.0 min=0.0 max=0.0
+KnowDepth      -
+Aborted        0%
+Games/s        384.2
+Score          0.00
+Sequence      
+96d57 info: 
+96d57 warning: **** MoHexSearch returned empty sequence!
+96d57 warning: **** Returning random move!
+<= 
+<
+>genmove w
+<= k8
+<
+>play b f11
+96d57 info: Best move cannot be determined, must search state.
+96d57 info: --- MoHexPlayer::Search() ---
+96d57 info: Color: white
+96d57 info: MaxGames: 1
+96d57 info: NumberThreads: 1
+96d57 info: MaxNodes: 181818181 (15999999928 bytes)
+96d57 info: TimeForMove: 1
+96d57 info: PreSearch: max time reached (45/81).
+96d57 info: Time for PreSearch: 0.201446s
+96d57 info: 
+  8fffd62d41c7ef14
+  a  b  c  d  e  f  g  h  i  j  k  
+ 1\.  .  .  *  *  *  *  *  *  *  .\1
+  2\.  .  *  *  *  *  *  *  *  *  .\2
+   3\.  *  *  *  *  *  *  *  *  *  .\3
+    4\.  *  *  *  *  *  *  *  *  *  .\4
+     5\.  *  *  *  *  *  *  *  *  *  .\5
+      6\.  *  *  *  *  *  *  *  *  *  .\6
+       7\.  .  B  *  *  *  *  *  *  *  .\7
+        8\.  .  *  *  *  *  *  *  *  *  .\8
+         9\.  *  *  *  *  *  *  W  *  *  .\9
+         10\.  *  .  B  .  *  *  *  *  .  .\10
+          11\.  b  b  b  b  .  *  *  .  .  .\11
+              a  b  c  d  e  f  g  h  i  j  k  
+96d57 info: Old: [black, d10] [white, swap-pieces] 
+96d57 info: New: [black, d10] [white, swap-pieces] [white, h9] [black, c7] 
+96d57 info: ReuseSubtree: Colors do not alternate.
+96d57 info: No subtree to reuse.
+96d57 info: StartSearch()[0]
+SgUctSearch: max games reached
+96d57 info: 
+Elapsed Time   0.342761s
+Count          1
+GamesPlayed    1
+Nodes          1
+Knowledge      0 (0.0%)
+Expansions     0.0
+Time           0.00
+GameLen        114.0 dev=0.0 min=114.0 max=114.0
+InTree         0.0 dev=0.0 min=0.0 max=0.0
+KnowDepth      -
+Aborted        0%
+Games/s        3300.3
+Score          1.00
+Sequence      
+96d57 info: 
+96d57 warning: **** MoHexSearch returned empty sequence!
+96d57 warning: **** Returning random move!
+<= 
+<
+>genmove w
+<= i3
+<
+>play b j9
+96d57 info: Best move cannot be determined, must search state.
+96d57 info: --- MoHexPlayer::Search() ---
+96d57 info: Color: white
+96d57 info: MaxGames: 1
+96d57 info: NumberThreads: 1
+96d57 info: MaxNodes: 181818181 (15999999928 bytes)
+96d57 info: TimeForMove: 1
+96d57 info: PreSearch: max time reached (52/82).
+96d57 info: Time for PreSearch: 0.201977s
+96d57 info: 
+  52e5795ef1f88c79
+  a  b  c  d  e  f  g  h  i  j  k  
+ 1\.  .  .  *  *  *  *  *  *  *  .\1
+  2\.  .  *  *  *  *  *  *  *  *  .\2
+   3\.  *  *  *  *  *  *  *  *  *  .\3
+    4\.  *  *  *  *  *  *  *  *  *  .\4
+     5\.  *  *  *  *  *  *  *  *  *  .\5
+      6\.  *  *  *  *  *  *  *  *  *  .\6
+       7\.  .  B  *  *  *  *  *  *  *  .\7
+        8\.  .  *  *  *  *  *  *  *  *  W\8
+         9\.  *  *  *  *  *  *  W  *  *  .\9
+         10\.  *  .  B  .  *  *  *  *  *  .\10
+          11\.  b  b  b  b  B  .  *  *  .  .\11
+              a  b  c  d  e  f  g  h  i  j  k  
+96d57 info: Old: [black, d10] [white, swap-pieces] [white, h9] [black, c7] 
+96d57 info: New: [black, d10] [white, swap-pieces] [white, h9] [black, c7] [white, k8] [black, f11] 
+96d57 info: MovesPlayed: [white, k8] [black, f11] 
+96d57 info: No subtree to reuse.
+96d57 info: StartSearch()[0]
+SgUctSearch: max games reached
+96d57 info: 
+Elapsed Time   0.344782s
+Count          1
+GamesPlayed    1
+Nodes          1
+Knowledge      0 (0.0%)
+Expansions     0.0
+Time           0.00
+GameLen        112.0 dev=0.0 min=112.0 max=112.0
+InTree         0.0 dev=0.0 min=0.0 max=0.0
+KnowDepth      -
+Aborted        0%
+Games/s        3205.1
+Score          0.00
+Sequence      
+96d57 info: 
+96d57 warning: **** MoHexSearch returned empty sequence!
+96d57 warning: **** Returning random move!
+<= 
+<
+>genmove w
+<= b5
+<
+>play b d5
+96d57 info: Best move cannot be determined, must search state.
+96d57 info: --- MoHexPlayer::Search() ---
+96d57 info: Color: white
+96d57 info: MaxGames: 1
+96d57 info: NumberThreads: 1
+96d57 info: MaxNodes: 181818181 (15999999928 bytes)
+96d57 info: TimeForMove: 1
+96d57 info: PreSearch: max time reached (51/76).
+96d57 info: Time for PreSearch: 0.200955s
+96d57 info: 
+  c8f10d0b8aa53c24
+  a  b  c  d  e  f  g  h  i  j  k  
+ 1\.  .  .  *  *  *  *  *  *  *  .\1
+  2\.  .  *  *  *  *  *  *  *  *  .\2
+   3\.  *  *  *  *  *  *  *  W  .  .\3
+    4\.  *  *  *  *  *  *  *  *  *  .\4
+     5\.  *  *  *  *  *  *  *  *  *  .\5
+      6\.  *  *  *  *  *  *  *  *  *  .\6
+       7\.  .  B  *  *  *  *  *  *  *  .\7
+        8\.  .  *  *  *  *  *  *  *  *  W\8
+         9\.  *  *  *  *  *  *  W  *  B  .\9
+         10\.  *  .  B  .  *  *  *  *  .  .\10
+          11\.  b  b  b  b  B  .  .  .  .  .\11
+              a  b  c  d  e  f  g  h  i  j  k  
+96d57 info: Old: [black, d10] [white, swap-pieces] [white, h9] [black, c7] [white, k8] [black, f11] 
+96d57 info: New: [black, d10] [white, swap-pieces] [white, h9] [black, c7] [white, k8] [black, f11] [white, i3] [black, j9] 
+96d57 info: MovesPlayed: [white, i3] [black, j9] 
+96d57 info: No subtree to reuse.
+96d57 info: StartSearch()[0]
+SgUctSearch: max games reached
+96d57 info: 
+Elapsed Time   0.343732s
+Count          1
+GamesPlayed    1
+Nodes          1
+Knowledge      0 (0.0%)
+Expansions     0.0
+Time           0.00
+GameLen        110.0 dev=0.0 min=110.0 max=110.0
+InTree         0.0 dev=0.0 min=0.0 max=0.0
+KnowDepth      -
+Aborted        0%
+Games/s        3484.3
+Score          0.00
+Sequence      
+96d57 info: 
+96d57 warning: **** MoHexSearch returned empty sequence!
+96d57 warning: **** Returning random move!
+<= 
+<
+>genmove w
+<= j10
+<
+>play b b9
+96d57 info: Best move cannot be determined, must search state.
+96d57 info: --- MoHexPlayer::Search() ---
+96d57 info: Color: white
+96d57 info: MaxGames: 1
+96d57 info: NumberThreads: 1
+96d57 info: MaxNodes: 181818181 (15999999928 bytes)
+96d57 info: TimeForMove: 1
+96d57 info: Time for PreSearch: 0.104801s
+96d57 info: 
+  343639bcd21c67d4
+  a  b  c  d  e  f  g  h  i  j  k  
+ 1\.  .  *  *  *  *  *  *  *  *  .\1
+  2\.  *  *  *  *  *  *  *  *  .  .\2
+   3\.  .  *  *  *  *  *  *  W  .  .\3
+    4\w  .  *  *  *  *  .  .  .  .  .\4
+     5\w  W  .  B  *  .  .  .  .  .  .\5
+      6\w  .  *  *  .  .  .  .  .  .  .\6
+       7\w  .  B  .  .  .  .  .  .  .  .\7
+        8\.  .  *  .  .  .  .  .  .  .  W\8
+         9\.  .  *  *  .  .  .  W  .  B  .\9
+         10\.  *  .  B  .  .  .  .  .  .  .\10
+          11\.  b  b  b  b  B  .  .  .  .  .\11
+              a  b  c  d  e  f  g  h  i  j  k  
+96d57 info: Old: [black, d10] [white, swap-pieces] [white, h9] [black, c7] [white, k8] [black, f11] [white, i3] [black, j9] 
+96d57 info: New: [black, d10] [white, swap-pieces] [white, h9] [black, c7] [white, k8] [black, f11] [white, i3] [black, j9] [white, b5] [black, d5] 
+96d57 info: MovesPlayed: [white, b5] [black, d5] 
+96d57 info: No subtree to reuse.
+96d57 info: StartSearch()[0]
+SgUctSearch: max games reached
+96d57 info: 
+Elapsed Time   0.258359s
+Count          1
+GamesPlayed    1
+Nodes          1
+Knowledge      0 (0.0%)
+Expansions     0.0
+Time           0.00
+GameLen        104.0 dev=0.0 min=104.0 max=104.0
+InTree         0.0 dev=0.0 min=0.0 max=0.0
+KnowDepth      -
+Aborted        0%
+Games/s        3257.3
+Score          1.00
+Sequence      
+96d57 info: 
+96d57 warning: **** MoHexSearch returned empty sequence!
+96d57 warning: **** Returning random move!
+<= 
+<
+>genmove w
+<= e1
+<
+>play b e3
+96d57 info: Opponent has won; playing most blocking move.
+<= 
+<
+>genmove w
+<= b10
+<
+>play b c9
+96d57 info: Opponent has won; playing most blocking move.
+<= 
+<
+>genmove w
+<= c10
+<
+>play b d9
+96d57 info: Opponent has won; playing most blocking move.
+<= 
+<
+>genmove w
+<= f2
+<
+>play b g3
+96d57 info: Opponent has won; playing most blocking move.
+<= 
+<
+>genmove w
+<= h1
+<
+>play b i2
+96d57 info: Opponent has won; playing most blocking move.
+<= 
+<
+>genmove w
+<= h3
+<
+>play b h2
+96d57 info: Opponent has won; playing most blocking move.
+<= 
+<
+>genmove w
+<= d6
+<
+>play b e5
+96d57 info: Opponent has won; playing most blocking move.
+<= 
+<
+>genmove w
+<= c6
+<
+>play b e6
+96d57 info: Opponent has won; playing most blocking move.
+<= 
+<
+>genmove w
+<= d7
+<
+>play b e7
+96d57 info: Opponent has won; playing most blocking move.
+<= 
+<
+>genmove w
+<= e8
+<
+>play b d8
+96d57 info: Opponent has won; playing most blocking move.
+<= 
+<
+>genmove w
+<= f3
+<
+>play b f4
+96d57 info: Opponent has won; playing most blocking move.
+<= 
+<
+>genmove w
+<= i1
+<
+>play b j1
+96d57 info: Captured cells caused win! Removing...
+96d57 info: Opponent has won; playing most blocking move.
+<= 
+<
+>genmove w
+<= d11
+<
+>play b c11
+96d57 info: Captured cells caused win! Removing...
+96d57 info: Opponent has won; playing most blocking move.
+<= 
+<
+>genmove w
+<= resign
+<
+>final_score
+<= B+
+<
+>quit
+<= 
+<
