@@ -1,6 +1,7 @@
 # benzene-vanilla-cmake (MoHex 2.0 and Wolve)
 
-###This Version has an updated Version of the scripts in tournament.  
+### This repository has an updated Version of the scripts in tournament.  
+
 A CMake managed benzene repository for playing and solving Hex.
 See http://benzene.sourceforge.net/ for description of the benzene project up to 2011. 
 Note that the 2011 version has a rather weak MCTS engine if not given many lock-free threads; see the 2011 Computer Olympiad Hex tournament report for details.  
